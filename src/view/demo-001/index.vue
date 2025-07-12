@@ -1,11 +1,15 @@
 <template>
   <section>
-    <CfComplexForm :activeComponentList="activeComponentList" />
+    <CfComplexForm
+      :schemaDefine="schemaDefine"
+      :activeComponentList="activeComponentList"
+    />
   </section>
 </template>
 
 <script>
 import CfComplexForm from '../../components/cf-complex-form';
+import { schemaDefine, activeComponentList } from './config';
 
 export default {
   name: 'QueryDemo001',
@@ -14,58 +18,8 @@ export default {
   },
   data() {
     return {
-      activeComponentList: [
-        {
-          id: 'uuid-100',
-          componentList: [],
-          children: [
-            {
-              id: 'uuid-110',
-              componentList: [],
-              children: [
-                {
-                  id: 'uuid-111',
-                  componentList: [],
-                },
-              ],
-            },
-            {
-              id: 'uuid-120',
-              children: [
-                {
-                  id: 'uuid-121',
-                  componentList: [],
-                },
-              ],
-            },
-          ],
-        },
-        {
-          id: 'uuid-200',
-          componentList: [],
-          children: [
-            {
-              id: 'uuid-210',
-              componentList: [],
-              children: [
-                {
-                  id: 'uuid-211',
-                  componentList: [],
-                },
-              ],
-            },
-            {
-              id: 'uuid-220',
-              children: [
-                {
-                  id: 'uuid-221',
-                  componentList: [],
-                },
-              ],
-            },
-          ],
-        },
-      ],
+      schemaDefine,
+      activeComponentList,
     };
   },
 };
