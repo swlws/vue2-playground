@@ -32,6 +32,12 @@ export default {
       return Array.isArray(children) && children.length > 0;
     },
   },
+  methods: {
+    addNode() {},
+    removeNode() {},
+    getTreeData() {},
+    validateTree() {},
+  },
 };
 </script>
 
