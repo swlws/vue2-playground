@@ -1,5 +1,5 @@
 <template>
-  <section class="cf-query-node">
+  <section :class="['cf-query-node', { 'has-children': hasChildren }]">
     <QueryRow :rowInfo="activeComponent" />
 
     <template v-if="hasChildren">
