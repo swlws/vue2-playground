@@ -17,5 +17,11 @@ export default {
       default: () => [],
     },
   },
+  methods: {
+    addNode() {},
+    removeNode() {},
+    getTreeData() {},
+    validateTree() {},
+  },
 };
 </script>
