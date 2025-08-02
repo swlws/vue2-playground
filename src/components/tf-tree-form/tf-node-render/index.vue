@@ -1,9 +1,3 @@
-<template>
-  <div class="tf-node-render">
-    {{ nodeData.id }}
-  </div>
-</template>
-
 <script>
 export default {
   name: 'TfNodeRender',
@@ -16,7 +10,10 @@ export default {
   data() {
     return {};
   },
-  methods: {},
   computed: {},
+  methods: {},
+  render() {
+    return <div class="tf-node-render">{this.nodeData.id}</div>;
+  },
 };
 </script>
