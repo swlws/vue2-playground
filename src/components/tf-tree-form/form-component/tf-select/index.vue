@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section class="tf-select">
     <el-select :value="values[0]" @change="handleChange">
       <el-option
         v-for="item in options"

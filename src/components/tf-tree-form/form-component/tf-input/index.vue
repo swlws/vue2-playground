@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section class="tf-input">
     <ElInput :value="values[0]" @change="handleChange" />
   </section>
 </template>

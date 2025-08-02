@@ -6,6 +6,7 @@
 
 <script>
 import TfTree from './tf-tree/index.vue';
+
 export default {
   name: 'TfTreeFrom',
   components: {
@@ -25,3 +26,6 @@ export default {
   },
 };
 </script>
+<style lang="scss">
+@import './style/var.scss';
+</style>

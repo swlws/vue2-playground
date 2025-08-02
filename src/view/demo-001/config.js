@@ -17,57 +17,10 @@ export const treeSchema = {};
 export const treeData = [
   {
     id: 'uuid-100',
+    componentName: 'TfInput',
     attrs: {
       indexStyle: '',
       nodeClassName: '',
     },
-    componentList: [],
-    children: [
-      {
-        id: 'uuid-110',
-        componentList: [],
-        children: [
-          {
-            id: 'uuid-111',
-            componentList: [],
-          },
-        ],
-      },
-      {
-        id: 'uuid-120',
-        children: [
-          {
-            id: 'uuid-121',
-            componentList: [],
-          },
-        ],
-      },
-    ],
-  },
-  {
-    id: 'uuid-200',
-    attrs: {},
-    componentList: [],
-    children: [
-      {
-        id: 'uuid-210',
-        componentList: [],
-        children: [
-          {
-            id: 'uuid-211',
-            componentList: [],
-          },
-        ],
-      },
-      {
-        id: 'uuid-220',
-        children: [
-          {
-            id: 'uuid-221',
-            componentList: [],
-          },
-        ],
-      },
-    ],
   },
 ];

@@ -38,6 +38,9 @@ export default {
 
 <style lang="scss" scoped>
 .tf-node {
+  min-height: var(--tf-node-min-height);
+  background-color: var(--tf-node-background-color);
+
   .tf-node-children {
     padding-left: 20px;
   }
