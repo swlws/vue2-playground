@@ -11,10 +11,16 @@ export const schemaDefine = {
   },
 };
 
+export const treeSchema = {};
+
 // 组件列表
 export const activeComponentList = [
   {
     id: 'uuid-100',
+    attrs: {
+      indexStyle: '',
+      nodeClassName: '',
+    },
     componentList: [],
     children: [
       {
@@ -40,6 +46,7 @@ export const activeComponentList = [
   },
   {
     id: 'uuid-200',
+    attrs: {},
     componentList: [],
     children: [
       {

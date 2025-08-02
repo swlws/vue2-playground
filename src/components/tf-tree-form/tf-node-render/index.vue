@@ -1,12 +1,12 @@
 <template>
-  <div class="query-row">
+  <div class="tf-node-render">
     {{ rowInfo.id }}
   </div>
 </template>
 
 <script>
 export default {
-  name: 'QueryRow',
+  name: 'TfNodeRender',
   props: {
     rowInfo: {
       type: Object,

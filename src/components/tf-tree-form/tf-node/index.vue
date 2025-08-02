@@ -1,13 +1,13 @@
 <template>
-  <section :class="['cf-query-node', { 'has-children': hasChildren }]">
-    <QueryRow :rowInfo="activeComponent" />
+  <section :class="['tf-node', { 'has-children': hasChildren }]">
+    <TfNodeRender :rowInfo="activeComponent" />
 
     <template v-if="hasChildren">
-      <div class="cf-query-children">
-        <QueryNode
+      <div class="tf-node-children">
+        <TfNodeRender
           v-for="item in activeComponent.children"
           :key="item.id"
-          :activeComponent="item"
+          :rowInfo="item"
         />
       </div>
     </template>
@@ -15,11 +15,11 @@
 </template>
 
 <script>
-import QueryRow from '../query-row/index.vue';
+import TfNodeRender from '../tf-node-render/index.vue';
 
 export default {
-  name: 'QueryNode',
-  components: { QueryRow },
+  name: 'TrNode',
+  components: { TfNodeRender },
   props: {
     activeComponent: {
       type: Object,
@@ -37,8 +37,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.cf-query-node {
-  .cf-query-children {
+.tf-node {
+  .tf-node-children {
     padding-left: 20px;
   }
 }

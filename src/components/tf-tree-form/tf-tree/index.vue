@@ -1,6 +1,6 @@
 <template>
   <section class="cf-query-tree">
-    <QueryNode
+    <TfNode
       v-for="activeComponent in activeComponentList"
       :key="activeComponent.id"
       :activeComponent="activeComponent"
@@ -9,11 +9,11 @@
 </template>
 
 <script>
-import QueryNode from '../query-node/index.vue';
+import TfNode from '../tf-node/index.vue';
 
 export default {
-  name: 'QueryTree',
-  components: { QueryNode },
+  name: 'TfTree',
+  components: { TfNode },
   props: {
     activeComponentList: {
       type: Array,

@@ -8,7 +8,8 @@
 </template>
 
 <script>
-import CfComplexForm from '../../components/cf-complex-form';
+// import CfComplexForm from '../../components/cf-complex-form';
+import CfComplexForm from '../../components/tf-tree-form';
 import { schemaDefine, activeComponentList } from './config';
 
 export default {

@@ -1,15 +1,15 @@
 <template>
-  <article class="cf-query-form">
-    <QueryTree :activeComponentList="activeComponentList" />
+  <article class="tf-tree-form">
+    <TfTree :activeComponentList="activeComponentList" />
   </article>
 </template>
 
 <script>
-import QueryTree from './query-tree/index.vue';
+import TfTree from './tf-tree/index.vue';
 export default {
-  name: 'CfComplexForm',
+  name: 'TfTreeFrom',
   components: {
-    QueryTree,
+    TfTree,
   },
   props: {
     activeComponentList: {
