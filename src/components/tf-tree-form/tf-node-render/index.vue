@@ -1,6 +1,6 @@
 <template>
   <div class="tf-node-render">
-    {{ rowInfo.id }}
+    {{ nodeData.id }}
   </div>
 </template>
 
@@ -8,7 +8,7 @@
 export default {
   name: 'TfNodeRender',
   props: {
-    rowInfo: {
+    nodeData: {
       type: Object,
       default: () => ({}),
     },

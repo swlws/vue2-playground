@@ -1,26 +1,23 @@
 <template>
   <section>
-    <CfComplexForm
-      :schemaDefine="schemaDefine"
-      :activeComponentList="activeComponentList"
-    />
+    <TfTreeFrom :schemaDefine="schemaDefine" :treeData="treeData" />
   </section>
 </template>
 
 <script>
-// import CfComplexForm from '../../components/cf-complex-form';
-import CfComplexForm from '../../components/tf-tree-form';
-import { schemaDefine, activeComponentList } from './config';
+// import TfTreeFrom from '../../components/cf-complex-form';
+import TfTreeFrom from '../../components/tf-tree-form';
+import { schemaDefine, treeData } from './config';
 
 export default {
   name: 'QueryDemo001',
   components: {
-    CfComplexForm,
+    TfTreeFrom,
   },
   data() {
     return {
       schemaDefine,
-      activeComponentList,
+      treeData,
     };
   },
 };

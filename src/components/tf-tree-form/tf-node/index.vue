@@ -1,13 +1,13 @@
 <template>
   <section :class="['tf-node', { 'has-children': hasChildren }]">
-    <TfNodeRender :rowInfo="activeComponent" />
+    <TfNodeRender :nodeData="nodeData" />
 
     <template v-if="hasChildren">
       <div class="tf-node-children">
         <TfNodeRender
-          v-for="item in activeComponent.children"
+          v-for="item in nodeData.children"
           :key="item.id"
-          :rowInfo="item"
+          :nodeData="item"
         />
       </div>
     </template>
@@ -21,14 +21,14 @@ export default {
   name: 'TrNode',
   components: { TfNodeRender },
   props: {
-    activeComponent: {
+    nodeData: {
       type: Object,
       default: () => ({}),
     },
   },
   computed: {
     hasChildren() {
-      const children = this.activeComponent.children;
+      const children = this.nodeData.children;
       return Array.isArray(children) && children.length > 0;
     },
   },

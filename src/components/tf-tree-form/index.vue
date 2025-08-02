@@ -1,6 +1,6 @@
 <template>
   <article class="tf-tree-form">
-    <TfTree :activeComponentList="activeComponentList" />
+    <TfTree :treeData="treeData" />
   </article>
 </template>
 
@@ -12,7 +12,7 @@ export default {
     TfTree,
   },
   props: {
-    activeComponentList: {
+    treeData: {
       type: Array,
       default: () => [],
     },

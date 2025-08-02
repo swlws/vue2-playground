@@ -14,7 +14,7 @@ export const schemaDefine = {
 export const treeSchema = {};
 
 // 组件列表
-export const activeComponentList = [
+export const treeData = [
   {
     id: 'uuid-100',
     attrs: {

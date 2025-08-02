@@ -1,9 +1,9 @@
 <template>
   <section class="cf-query-tree">
     <TfNode
-      v-for="activeComponent in activeComponentList"
-      :key="activeComponent.id"
-      :activeComponent="activeComponent"
+      v-for="nodeData in treeData"
+      :key="nodeData.id"
+      :nodeData="nodeData"
     />
   </section>
 </template>
@@ -15,7 +15,7 @@ export default {
   name: 'TfTree',
   components: { TfNode },
   props: {
-    activeComponentList: {
+    treeData: {
       type: Array,
       default: () => [],
     },
