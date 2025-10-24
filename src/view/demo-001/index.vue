@@ -1,24 +1,17 @@
 <template>
-  <section>
-    <TfTreeFrom :schemaDefine="schemaDefine" :treeData="treeData" />
-  </section>
+  <article>
+    <VpList />
+  </article>
 </template>
 
 <script>
-// import TfTreeFrom from '../../components/cf-complex-form';
-import TfTreeFrom from '../../components/tf-tree-form';
-import { schemaDefine, treeData } from './config';
-
 export default {
   name: 'QueryDemo001',
   components: {
-    TfTreeFrom,
+    VpList: () => import('@/components/vp-list/index.vue'),
   },
   data() {
-    return {
-      schemaDefine,
-      treeData,
-    };
+    return {};
   },
 };
 </script>
